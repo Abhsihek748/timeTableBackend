@@ -11,3 +11,9 @@ app.use('/teacher', teacherRouter) ;
 app.listen(process.env.PORT||8081, function () {
     console.log("server started");
 })
+app.use(function (req, res) {
+    // console.log("fullPath", fullPath);
+    res.status(404).json({
+        message: "page Not found"
+    })
+})
