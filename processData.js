@@ -20,9 +20,9 @@ dataT["maths"] = csvToData('Teacher wise class timetable - Maths.csv');
 dataT["kannada"] = csvToData('Teacher wise class timetable - Kannada.csv');
 dataT["hindi"] = csvToData('Teacher wise class timetable - Hindi.csv');
 
-studentData();
 
-updateTeachersData();
+
+
 
 const studentData = ()=>{
     for(let teacher in dataT) {
@@ -41,6 +41,7 @@ const studentData = ()=>{
         }
     }
 }
+studentData();
 
 const updateTeachersData = ()=>{
    dataTU = JSON.parse(JSON.stringify(dataT));
@@ -68,6 +69,8 @@ const updateTeachersData = ()=>{
     }
   }
 }
+
+updateTeachersData();
 
 const findMinExtraTeacher = ()=>{
     for(let day of days){
