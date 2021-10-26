@@ -14,7 +14,15 @@ dataS['8th'] = JSON.parse(JSON.stringify(temp));
 dataS['9th'] = JSON.parse(JSON.stringify(temp));
 dataS['10th'] = JSON.parse(JSON.stringify(temp));
 
+dataT["english"] = csvToData('Teacher wise class timetable - English.csv');
+dataT["science"] = csvToData('Teacher wise class timetable - Science.csv');
+dataT["maths"] = csvToData('Teacher wise class timetable - Maths.csv');
+dataT["kannada"] = csvToData('Teacher wise class timetable - Kannada.csv');
+dataT["hindi"] = csvToData('Teacher wise class timetable - Hindi.csv');
 
+studentData();
+
+updateTeachersData();
 
 const studentData = ()=>{
     for(let teacher in dataT) {
@@ -74,15 +82,9 @@ const findMinExtraTeacher = ()=>{
     }
 }
 
-    dataT["english"] = csvToData('Teacher wise class timetable - English.csv');
-    dataT["science"] = csvToData('Teacher wise class timetable - Science.csv');
-    dataT["maths"] = csvToData('Teacher wise class timetable - Maths.csv');
-    dataT["kannada"] = csvToData('Teacher wise class timetable - Kannada.csv');
-    dataT["hindi"] = csvToData('Teacher wise class timetable - Hindi.csv');
-    
-studentData();
 
-updateTeachersData();
+    
+
 
 idleTeacher = totalClasses -totalAttended - updatedClasses;
 
