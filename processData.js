@@ -90,7 +90,7 @@ if(idleTeacher > 0) {
     findMinExtraTeacher();
 }
 
-console.log(idleTeacher);
+console.log("idleTeahcer:" +idleTeacher);
 module.exports.teacherData = dataT;
 module.exports.studentData = dataS;
 module.exports.teacherDataUpdated = dataTU;

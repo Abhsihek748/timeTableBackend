@@ -5,11 +5,13 @@ const { teacherData  , teacherDataUpdated ,idleTeacher , ExtraTeacher} = require
 
 teacherRouter.route('/idleTeacher')
 .get(function (req, res){
-    // console.log(idleTeacher);
+    console.log(idleTeacher);
     res.json({idleTeacher});
 })
-teacherRouter.route('/ExtraTeaher')
+
+teacherRouter.route('/ExtraTeacher')
 .get(function (req, res){
+    console.log("dd");
     res.json({ExtraTeacher});
 })
 
