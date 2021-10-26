@@ -62,10 +62,10 @@ const updateTeachersData = ()=>{
 }
 
 const findMinExtraTeacher = ()=>{
-    for(let day in days){
-        for(let hour in hours){
+    for(let day of days){
+        for(let hour of hours){
             let maxEmptyClasses = 0 ;
-            for(let Class in classes){
+            for(let Class of classes){
               if(dataSU[Class][hour][day] == '')
               maxEmptyClasses++;
             }  
