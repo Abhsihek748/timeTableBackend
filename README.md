@@ -1,4 +1,4 @@
-this s the backend for the timetable project 
+this is the backend for the timetable project 
 the data here is given in the csv files which is the teachers timetable and we have to convert it into students time table .
 
 the server is set up in a way which makes gettind data easier for all 
