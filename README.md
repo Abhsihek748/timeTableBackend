@@ -1,3 +1,7 @@
+Backend deployment : https://floating-ridge-60992.herokuapp.com/student/updated/6th
+
+this deployment is buggy and would give bad data . So i would request for you all to use it in local machine for testing .
+
 this is the backend for the timetable project 
 the data here is given in the csv files which is the teachers timetable and we have to convert it into students time table .
 
