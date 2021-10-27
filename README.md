@@ -9,7 +9,7 @@ the server should listen to http://localhost:8081/
 
 get request on 
 
-/student/'classNme' -> gives the time table for classNamw
+/student/'classNme' -> gives the time table for className
 eg : /student/6th -> 6th class
 
 get request on
@@ -20,7 +20,7 @@ eg : /teacher/hindi -> hindi teacher
  // for updated after removing teachers idle time
  
 get request on
-/student/updated/'classNme' -> gives the time table for classNamw
+/student/updated/'classNme' -> gives the time table for className
 eg : /student/6th -> 6th class
 
 get request on
