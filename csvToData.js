@@ -1,6 +1,6 @@
-const fs = require('fs');
+const fs = require('fs'); // to read the csv file
 
-const csvToData =  (csv)=>{
+const csvToData =  (csv)=>{  // parse the csv file into json object
     let data = fs.readFileSync(csv);
     csv=data.toString();
     let lines=csv.split("\r\n");
@@ -21,7 +21,7 @@ const csvToData =  (csv)=>{
         result.push(obj);
     
     }
-    return result ;
+    return result ; // parsed answer
     }
 
-    module.exports = csvToData ;
+    module.exports = csvToData ; // function exported
